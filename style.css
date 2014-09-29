@@ -41,3 +41,14 @@ img.center {
   margin-right: auto;
   margin-top:40px;
 }
+
+
+
+#styleQuote {
+    display: block;
+	font-family: 'Tangerine', serif;
+	font-size: 200%;
+    text-align: center;
+}
+
+
