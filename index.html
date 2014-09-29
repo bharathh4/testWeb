@@ -7,7 +7,8 @@
 
 <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
 <link rel="stylesheet" type="text/css" href="style.css" />
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script>
 
 <p1>
 Life is sometimes about squeezing our loved one's face. Squeezing 
@@ -31,9 +32,44 @@ emotions ranging from contentment to intense joy.[1] A variety of biological, ps
 <h1>London is one big bridge</h1>
 </div>
 
-<img src="London-LondonBridge.jpg" style="width:648px;height:400px" class="center">
+<img id="picId" src="London-LondonBridge.jpg" style="width:648px;height:400px" class="center">
+
+<p id="X">Apple</p>
+<p id="Y">Mango</p>
+
+<script>
+$(document).on( "mousemove", function( event ) {
+  $( "#X" ).text(event.pageX);
+  $( "#Y" ).text(event.pageY);
+});
+</script>
+
+<div id="styleQuote">
+<h1>Your browsing area interest in this webpage</h1>
+</div>
 
 
+<canvas id="myCanvas" width="300" height="400" style="border:1px solid #000000">
+<script>
+var c = document.getElementById("myCanvas");
 
+$(document).on( "mousemove", function( event ) 
+{
+  $( "#X" ).text(event.pageX);
+  $( "#Y" ).text(event.pageY);
+  var ctx = c.getContext("2d");
+ ctx.fillStyle = "#FF0000";
+ ctx.fillRect((event.pageX)/5,(event.pageY)/5,2,2);
+});
+
+</script>
+
+
+<p1>
+I want to break to you the devout fan that I am about diagnose your interest. This is the idea. I track your mouse hover and 
+based on that judge you.
+</p1>
+
+  
 </body>
 </html>

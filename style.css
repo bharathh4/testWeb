@@ -18,6 +18,16 @@ p2{
 
 }
 
+p{
+    color: black;
+    text-align: center;
+	font-family: Times;
+    font-size: 21px;
+	margin-top:40px;
+	display: block;
+
+}
+
 
 
 body{
@@ -51,4 +61,12 @@ img.center {
     text-align: center;
 }
 
+#myCanvas{
+margin-left: auto;
+    margin-right: auto;
+	    display: block;
+		padding-left: 0;
+    padding-right: 0;
+
+}
 
